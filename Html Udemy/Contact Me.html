@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>COntact Me</title>
+</head>
+
+<body>
+  <h1>My Contact Details</h1>
+  <p>Essen</p>
+  <p>dianka.fa@gmail.com</p>
+  <br><br>
+  <p>Want to leave me a message?</p>
+  <form  action="mailto:dianka.fa@gmail.com" method="post" enctype="text/plain">
+    <!-- inside form action= if left at index.html,
+      upon clicking on button, it will sgo to main page.
+      It needs to be defined to what I want it to do.
+    Change ito to mailto so that I can get an email of the message-->
+<!--it is usefull here to remove form CLASS and add at the end ENCTYPE='text/plain'
+our form is encoded/translated in plain text understandable to me-->
+
+
+    <label for="Name">Your Name:</label>
+      
+  <!-- when i change the name attribute , when the form
+    is submitted (the essaged),
+    the information sent will be classified in the email i receive) -->
+    <input type="text" name="" value="Name"><br>
+    <label for="">Your Email:</label>
+    <input type="email" name="" value=""><br>
+    <label >Your message:</label> <br>
+    <textarea name="message" rows="10" cols="30"></textarea> <br>
+    <input type="submit" name="" value="Submit">
+
+
+  </form>
+</body>
+
+</html>
